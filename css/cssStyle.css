@@ -1,0 +1,83 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: block;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #ccc
+}
+
+.form-cad {
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+}
+
+.cadastro {
+  max-width: 330px;
+}
+
+.consulta {
+  max-width: 90%;
+}
+
+.form-cad .checkbox {
+  font-weight: 400;
+}
+.form-cad .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-cad .form-control:focus {
+  z-index: 2;
+}
+.form-cad input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-cad input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.error{
+	color: #fd5b5b;
+	font-size: 10px;
+}
+
+.divInput {
+  margin-bottom: 10px;
+}
+
+table {
+  font-size: initial;
+  background-color: rgb(255, 255, 255);
+}
+
+.head-table{
+  background-color: rgb(171 171 171);
+
+}
+
+.btnMenuNav{
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.btnMenuNav:hover {
+  color: rgb(67, 110, 135);
+  text-decoration: none;
+
+}
