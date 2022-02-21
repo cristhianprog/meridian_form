@@ -73,12 +73,12 @@
         exit;
     }
 
-
     $pessoa     = $_POST['pessoa'];
     $nome       = $_POST['nome'];
     $documento  = $_POST['documento'];
     $email      = $_POST['email'];
     $telefone   = $_POST['telefone'];
+    $socio   = $_POST['socio'];
 
     include_once('conexao.php');
 
@@ -97,12 +97,13 @@
 
     $pdo = new PDO('mysql:host=localhost; dbname=formulariodb;', 'root', '');
 
-    $queryInsert = $pdo->prepare('INSERT INTO clientes (pessoa, nome, documento, email, telefone) VALUES (:pe, :no, :do, :em, :te)');
+    $queryInsert = $pdo->prepare('INSERT INTO clientes (pessoa, nome, documento, email, telefone, socio) VALUES (:pe, :no, :do, :em, :te, :so)');
     $queryInsert->bindValue(':no', $nome);
     $queryInsert->bindValue(':pe', $pessoa);
     $queryInsert->bindValue(':do', $documento);
     $queryInsert->bindValue(':em', $email);
     $queryInsert->bindValue(':te', $telefone);
+    $queryInsert->bindValue(':so', $socio);
     $queryInsert->execute();
 
     if ($queryInsert->rowCount() >= 1) {

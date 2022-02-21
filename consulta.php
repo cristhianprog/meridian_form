@@ -38,6 +38,7 @@
 						<th>Documento</th>
 						<th>Email</th>
 						<th>Telefone</th>
+						<th>Socio</th>
                         <th></th>
                         <th></th>
 					</tr>

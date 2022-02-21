@@ -38,6 +38,7 @@
                     $documento = $registro['documento'];
                     $email = $registro['email'];
                     $telefone = $registro['telefone'];
+                    $socio = $registro['socio'];
             }
         ?>
 				
@@ -76,6 +77,14 @@
                     <label for="telefone"> Telefone: </label><br>
                     <input type="text" class="form-control" id="telefone" value="<?php echo $telefone ?>"  name="telefone" placeholder="(00)00000-0000"
                     onkeypress="$(this).mask('(00) 00000-0000')">
+                </div>
+
+                <div class="divInput">
+                    <label for="socio">Sócio: </label> 
+                    <select class="form-control" id="socio" name="socio">
+                        <option value="Sim" <?=($socio == 'Sim')?'selected':''?>>Sim</option>
+                        <option value="Nao" <?=($socio == 'Nao')?'selected':''?>>Não</option>
+                    </select>
                 </div>
 
 

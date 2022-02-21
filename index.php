@@ -56,6 +56,15 @@
                     onkeypress="$(this).mask('(00) 00000-0000')" minlength="14" maxlength="14">
                 </div>
             </div>
+
+            <div class="divInput">
+                <label for="socio">Sócio: </label> 
+                <select class="form-control" id="socio" name="socio">
+                    <option value="Sim" >Sim</option>
+                    <option value="Nao" >Não</option>
+                </select>
+            </div>
+
 			<input class="btn btn-primary" form="form_clientes" type="submit" value="Enviar">
 
 		</form>

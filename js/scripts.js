@@ -74,6 +74,9 @@ $(function(){
 				maxlength: 15
 
 			},
+			socio:{
+				required: true
+			},
 		},
 		messages: {
 			pessoa: "Campo obrigatório",
@@ -84,6 +87,8 @@ $(function(){
 			documento: "Campo obrigatório",
 			email: "Campo obrigatório",
 			telefone: "Campo obrigatório",
+			socio: "Campo obrigatório",
+
 		
 		}
 	
@@ -103,6 +108,7 @@ $(function(){
 		var v_documento = $('#documento').val();
 		var v_email = $('#email').val();
 		var v_telefone = $('#telefone').val();
+		var v_socio = $('#socio').val();
 
 		//valida email
 		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -148,7 +154,7 @@ $(function(){
 				}, 
 				url: form.attr('action'),
 				method: form.attr('method'),
-				data: {id: v_id, pessoa: v_pessoa, nome: v_nome, documento: v_documento, email: v_email, telefone: v_telefone},
+				data: {id: v_id, pessoa: v_pessoa, nome: v_nome, documento: v_documento, email: v_email, telefone: v_telefone, socio: v_socio},
 				dataType: 'json',
 				// Se enviado com sucesso
 				success: function( data ) {	

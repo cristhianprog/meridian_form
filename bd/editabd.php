@@ -81,22 +81,24 @@
     $documento  = $_POST['documento'];
     $email      = $_POST['email'];
     $telefone   = $_POST['telefone'];
+    $socio      = $_POST['socio'];
 
     $pdo = new PDO('mysql:host=localhost; dbname=formulariodb;', 'root', '');
 
-    $queryInsert = $pdo->prepare('update clientes set pessoa=:pe, nome=:no, documento=:do, email=:em, telefone=:te where id=:id');
+    $queryInsert = $pdo->prepare('update clientes set pessoa=:pe, nome=:no, documento=:do, email=:em, telefone=:te, socio=:so where id=:id');
     $queryInsert->bindValue(':id', $id);
     $queryInsert->bindValue(':pe', $pessoa);
     $queryInsert->bindValue(':no', $nome);
     $queryInsert->bindValue(':do', $documento);
     $queryInsert->bindValue(':em', $email);
     $queryInsert->bindValue(':te', $telefone);
+    $queryInsert->bindValue(':so', $socio);
     $queryInsert->execute();
 
     if ($queryInsert->rowCount() >= 1) {
         echo json_encode('editado');
     } else {
-        echo json_encode('Falha ao salvar dados' . $id . $pessoa);
+        echo json_encode('Falha ao salvar dados -> ' . $socio );
     }
   
 

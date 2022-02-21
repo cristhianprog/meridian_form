@@ -10,6 +10,7 @@
         $documento = $registros['documento'];
         $email = $registros['email'];
         $telefone = $registros['telefone'];
+		$socio = $registros['socio'];
 
         
         echo "<tr>";
@@ -20,6 +21,7 @@
 		<td>$documento</td>
 		<td>$email</td>
 		<td>$telefone</td>
+		<td>$socio</td>
 		<td><a href='edita.php?id=$id' class='btn btn-primary' >Editar</td>
 		<td><a id='".$id."' class='btn btn-danger btnExcluir'>Excluir</td>";
 		echo "</tr>";
