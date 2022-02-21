@@ -81,3 +81,10 @@ table {
   text-decoration: none;
 
 }
+
+
+
+.glyphicon-plane {
+  transform: rotate(45deg);
+
+}

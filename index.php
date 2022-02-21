@@ -16,7 +16,10 @@
 	</head>
 	<body>
 		<div class="d-flex flex-column flex-md-row align-items-center p-2 px-md-4 mb-3 bg-white border-bottom shadow-sm justify-content-between">
-			<h3 class="my-1 mr-md-auto font-weight-normal">Formulário Meridian</h5>
+
+			<h3 class="my-1 mr-md-auto font-weight-normal">
+            <span class="glyphicon glyphicon-plane glyphicon-align-left m-2" aria-hidden="true"></span> 
+            Formulário Meridian</h3>
 			<a class="p-2 m-2 btnMenuNav" href="consulta.php">Consultar</a>
 		</div>
 
